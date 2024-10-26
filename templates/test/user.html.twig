@@ -1,0 +1,14 @@
+
+
+
+    <h1>Users List</h1>
+    <ul>
+        {% for user in users %}
+            <li>{{ user.name }} - {{ user.email }} - {{ user.age }}
+            {%if user.age >= 30 %}
+                <button> I am a button </button>
+            {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+ 
